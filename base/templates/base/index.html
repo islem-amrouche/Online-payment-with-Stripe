@@ -2,10 +2,7 @@
 {% load static %}
 {% block content %}
 	<style type="text/css">
-		/**
-		 * The CSS shown here will not be introduced in the Quickstart guide, but shows
-		 * how you can use CSS to style your Element's container.
-		 */
+
 		 .card-style{
 			 box-shadow: rgb(96, 96, 194) 3px 3px 8px;
 		 }
@@ -78,7 +75,7 @@
 				    </div><br>
 
 				    <!-- Used to display form errors. -->
-				    <div role="alert"></div><br>
+				    <div id="card-errors" role="alert"></div><br>
 				  </div>
 				  
 				  <div></div>
@@ -99,8 +96,7 @@
 		// Create an instance of Elements.
 		var elements = stripe.elements();
 
-		// Custom styling can be passed to options when creating an Element.
-		// (Note that this demo uses a wider set of styles than the guide below.)
+		// Custom styling
 		var style = {
 		  base: {
 		    color: '#32325d',
