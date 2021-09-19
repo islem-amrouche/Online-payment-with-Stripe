@@ -1,0 +1,16 @@
+{% extends 'base/template.html' %}
+{% load static %}
+{% block content %}
+<style>
+	.card-style{
+		box-shadow: rgb(96, 96, 194) 3px 3px 8px;
+	}
+</style>
+	<div id="card card-style p-4">
+		<img id="succes-icon" src="{% static 'images/check.png' %}">
+		<h4>You just donated ${{amount}}!</h4>
+		<hr>
+		<a class="btn btn-info" href="{% url 'index' %}">&#x2190;Back to donation page</a>
+	</div>
+
+{% endblock content %}
